@@ -9,7 +9,7 @@
 import Foundation
 
 struct ArticleResponse: Decodable {
-    let article: [Article]
+    let articles: [Article]
 }
 
 struct Article: Decodable {

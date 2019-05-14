@@ -16,6 +16,7 @@ struct Resource<T: Decodable> {
 }
 
 extension URLRequest {
+    
     static func load<T>(resource: Resource<T>) -> Observable<T> {
         
         return Observable.just(resource.url)
